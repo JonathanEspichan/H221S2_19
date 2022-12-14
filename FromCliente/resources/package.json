@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon connect.js"
-    },
+    "iniciar": "nodemon ./connect.js"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
