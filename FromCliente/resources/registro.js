@@ -41,10 +41,10 @@ formArticulo.addEventListener('submit',
                 }
             )
             .then(
-                response => response.json()
+            response => response.json()
             )
             .then(
-                response => location.reload()
+            response => location.reload()
             );
         }
     } else if(opcion == 'editar'){

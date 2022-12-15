@@ -10,7 +10,7 @@ var conexion = mysql.createConnection({
   host: "localhost",
   user: "root",
   password: "root",
-  database: "dbContáctanos",
+  database: "Contactanos",
 });
 
 conexion.connect(function (error) {
@@ -29,13 +29,13 @@ conexion.connect(function (error) {
 
   app.post("/api/cliente", (req, res) => {
     let data = {
-        usercli: req.body.USERCLI,
-        emauscli: req.body.EMAUSCLI,
-        celuscli: req.body.CELUSCLI,
-        datuscli: req.body.DATUSCLI,
-        msgcli: req.body.MSGCLI
+       USERCLI: req.body.USERCLI,
+       EMAUSCLI: req.body.EMAUSCLI,
+       CELUSCLI: req.body.CELUSCLI,
+       DATUSCLI: req.body.DATUSCLI,
+       MSGCLI: req.body.MSGCLI
     };
-    let sql = "INSERT INTO cliente SET ?";
+    let sql = "INSERT INTO CLIENTE SET ?";
     conexion.query(sql, data, function (error, results) {
       if (error) {
         throw error;
