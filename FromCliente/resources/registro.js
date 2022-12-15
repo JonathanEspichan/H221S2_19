@@ -1,4 +1,4 @@
-const url = "http://localhost:3000/api/cliente/";
+const url = "http://3.229.194.114:3000/api/cliente/";
 let resultados = '';
 const formArticulo = document.querySelector("form");
 const usercli = document.getElementById("USERCLI");
