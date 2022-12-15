@@ -45,3 +45,9 @@ conexion.connect(function (error) {
       }
     });
     });
+
+    app.use(express.static(__dirname+'/'));
+
+    app.get('/',(req,res) => {
+      res.sendFile("/index.html")
+  });
