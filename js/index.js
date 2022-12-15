@@ -1,11 +1,3 @@
-/*-----BARRA DE MENÚ----- */
-/*LE DECIMOS QUE AL PASAR EL MOUSE SE VISUALIZARA LOS SUB-MENUS */
-window.addEventListener(scroll,function(){
-    var header = document.querySelector("header");
-    header.classList.toggle("abajo", window.scrollY>0);
-})
-
-/*-----FINAL DE BARRA DE MENÚ----- */
 
 /* ------ inicio de boton leer más ------ */
 let cerrar = document.querySelectorAll(".close")[0];
@@ -106,9 +98,8 @@ var swiper = new Swiper(".slide-content", {
   });
 
 
-/*-----Agregamos relacion de nuestro carrusel-----*/
+
 
 var slider = document.querySelector(".slier-prin");
 
 slider.innerHTML += slider.innerHTML;
-/*-----FINAL DE carrusel -----*/
