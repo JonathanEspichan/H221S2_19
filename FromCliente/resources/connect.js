@@ -7,9 +7,9 @@ app.use(express.json());
 app.use(cors());
 
 var conexion = mysql.createConnection({
-  host: "3.229.194.114",
-  user: "espichan",
-  password: "1234",
+  host: "localhost",
+  user: "root",
+  password: "root",
   database: "Contactanos",
 });
 
@@ -29,13 +29,13 @@ conexion.connect(function (error) {
 
   app.post("/api/cliente", (req, res) => {
     let data = {
-       USERCLI: req.body.USERCLI,
-       EMAUSCLI: req.body.EMAUSCLI,
-       CELUSCLI: req.body.CELUSCLI,
-       DATUSCLI: req.body.DATUSCLI,
-       MSGCLI: req.body.MSGCLI
+        usercli: req.body.USERCLI,
+        emauscli: req.body.EMAUSCLI,
+        celuscli: req.body.CELUSCLI,
+        datuscli: req.body.DATUSCLI,
+        msgcli: req.body.MSGCLI
     };
-    let sql = "INSERT INTO CLIENTE SET ?";
+    let sql = "INSERT INTO cliente SET ?";
     conexion.query(sql, data, function (error, results) {
       if (error) {
         throw error;

@@ -120,3 +120,8 @@ form .form{
 .order .row form .btn:hover{
   background:var(--red);
 }
+
+.col-lg-12{
+  display: flex;
+  position: center;
+}
